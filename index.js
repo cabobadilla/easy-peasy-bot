@@ -86,7 +86,11 @@ controller.on('bot_channel_join', function (bot, message) {
 });
 
 controller.hears('hello', 'direct_message', function (bot, message) {
-    bot.reply(message, 'Hello!');
+    bot.reply(message, 'Hello! Pao');
+});
+
+controller.hears('hola', 'direct_message,mention,direct_mention', function (bot, message) {
+    bot.reply(message, 'Hola! Pao');
 });
 
 
